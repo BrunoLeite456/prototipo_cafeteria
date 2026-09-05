@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Documentação do Projeto — Café da Claudinha</title>
+<style>
+  @page { margin: 2.8cm 2.8cm 2.4cm 3.2cm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1a1a1a;
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+  p { text-align: justify; margin: 0 0 12px; }
+  h1, h2, h3 { font-family: 'Times New Roman', Times, serif; color: #1a1a1a; }
+
+  /* Capa */
+  .cover {
+    height: 25.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cover .inst { font-size: 13px; margin-top: 10px; }
+  .cover .course { font-size: 13px; margin-bottom: 90px; }
+  .cover .spacer { flex-grow: 1; }
+  .cover h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+  }
+  .cover h2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 60px;
+  }
+  .cover .meta { font-size: 12.5px; margin-bottom: 6px; }
+  .cover .place { margin-top: 100px; font-size: 12.5px; }
+
+  .page-break { page-break-before: always; }
+
+  h2.sec {
+    font-size: 14.5px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #999;
+  }
+  h3.subsec {
+    font-size: 13px;
+    margin: 18px 0 8px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 18px;
+    font-size: 11.3px;
+  }
+  th, td {
+    border: 1px solid #999;
+    padding: 6px 9px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #ececec;
+    font-weight: bold;
+  }
+
+  ol.formal, ul.formal {
+    margin: 0 0 14px;
+    padding-left: 22px;
+  }
+  ol.formal li, ul.formal li { margin-bottom: 6px; text-align: justify; }
+
+  .toc p { margin: 0 0 8px; }
+  .toc .num { display: inline-block; width: 22px; }
+
+  .sign-block {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .sign-line {
+    width: 260px;
+    border-top: 1px solid #333;
+    margin: 40px auto 6px;
+  }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="cover">
+  <p class="inst">[NOME DA INSTITUIÇÃO DE ENSINO]</p>
+  <p class="course">Curso Técnico/Superior em Análise e Desenvolvimento de Sistemas</p>
+
+  <div class="spacer"></div>
+
+  <h1>Documentação de Projeto de Software</h1>
+  <h2>Café da Claudinha — Desenvolvimento de Site Institucional segundo o Modelo Cascata</h2>
+
+  <div class="spacer"></div>
+
+  <p class="meta"><strong>Autor(a):</strong> [Nome do(a) aluno(a)]</p>
+  <p class="meta"><strong>Disciplina:</strong> [Nome da disciplina]</p>
+  <p class="meta"><strong>Professora responsável:</strong> Cláudia</p>
+
+  <p class="place">[Cidade], [mês] de [ano]</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SUMÁRIO -->
+<h2 class="sec">Sumário</h2>
+<div class="toc">
+  <p><span class="num">1</span> Introdução</p>
+  <p><span class="num">2</span> Objetivos</p>
+  <p><span class="num">3</span> Metodologia — Modelo Cascata</p>
+  <p><span class="num">4</span> Requisitos do Sistema</p>
+  <p><span class="num">5</span> Análise e Projeto</p>
+  <p><span class="num">6</span> Desenvolvimento</p>
+  <p><span class="num">7</span> Testes</p>
+  <p><span class="num">8</span> Implantação</p>
+  <p><span class="num">9</span> Considerações Finais</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- 1 INTRODUÇÃO -->
+<h2 class="sec">1. Introdução</h2>
+<p>
+O presente documento tem como objetivo registrar o processo de desenvolvimento de um site
+institucional para a cafeteria fictícia "Café da Claudinha", elaborado como trabalho prático
+da disciplina de Análise e Desenvolvimento de Sistemas. A proposta simula a contratação de uma
+equipe de desenvolvimento por parte de uma pequena empresa do ramo alimentício, que deseja
+divulgar seus produtos, seu cardápio e seus dados de contato por meio de um site simples,
+responsivo e de fácil manutenção.
+</p>
+<p>
+O projeto foi conduzido conforme o Modelo Cascata, escolhido por sua adequação a projetos de
+escopo reduzido e prazo definido, no caso, duas aulas. O Modelo Cascata caracteriza-se pela
+execução sequencial e não sobreposta das etapas de desenvolvimento, de modo que cada fase
+somente é iniciada após a conclusão e validação da fase anterior.
+</p>
+
+<!-- 2 OBJETIVOS -->
+<h2 class="sec">2. Objetivos</h2>
+<h3 class="subsec">2.1 Objetivo geral</h3>
+<p>
+Desenvolver um protótipo funcional de site institucional para a cafeteria Café da Claudinha,
+com identidade visual própria, navegação entre páginas e formulário de contato, aplicando as
+etapas do Modelo Cascata.
+</p>
+<h3 class="subsec">2.2 Objetivos específicos</h3>
+<ul class="formal">
+  <li>Levantar e documentar os requisitos funcionais e não funcionais do sistema;</li>
+  <li>Definir a arquitetura de navegação e as tecnologias a serem utilizadas;</li>
+  <li>Implementar as páginas de início, cardápio e contato utilizando HTML5, CSS3 e JavaScript;</li>
+  <li>Validar o funcionamento do sistema por meio de casos de teste;</li>
+  <li>Registrar as condições de implantação do protótipo.</li>
+</ul>
+
+<!-- 3 METODOLOGIA -->
+<h2 class="sec">3. Metodologia — Modelo Cascata</h2>
+<p>
+O Modelo Cascata é uma metodologia de desenvolvimento de software estruturada em fases
+sequenciais e lineares, em que o início de uma etapa depende da conclusão da etapa anterior.
+Essa característica confere previsibilidade ao processo, sendo especialmente adequada a
+projetos com requisitos bem definidos e prazo fixo, como o presente trabalho, desenvolvido no
+período de duas aulas. As etapas seguidas neste projeto foram:
+</p>
+<ol class="formal">
+  <li><strong>Requisitos</strong> — levantamento das necessidades da cafeteria e definição do que o sistema deveria apresentar;</li>
+  <li><strong>Análise e Projeto</strong> — definição da estrutura de navegação, da aparência visual e das tecnologias empregadas;</li>
+  <li><strong>Desenvolvimento</strong> — implementação das páginas e das funcionalidades previstas nos requisitos;</li>
+  <li><strong>Testes</strong> — verificação do funcionamento do sistema e de sua responsividade em diferentes dispositivos;</li>
+  <li><strong>Implantação</strong> — disponibilização do site para utilização.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<!-- 4 REQUISITOS -->
+<h2 class="sec">4. Requisitos do Sistema</h2>
+<h3 class="subsec">4.1 Requisitos funcionais</h3>
+<table>
+  <thead><tr><th style="width:60px;">ID</th><th>Descrição</th></tr></thead>
+  <tbody>
+    <tr><td>RF01</td><td>O site deve apresentar informações sobre a cafeteria.</td></tr>
+    <tr><td>RF02</td><td>O site deve apresentar o cardápio, contendo nome do produto, descrição, preço e imagem.</td></tr>
+    <tr><td>RF03</td><td>O site deve apresentar endereço, telefone e horário de funcionamento.</td></tr>
+    <tr><td>RF04</td><td>O usuário deve poder preencher um formulário de contato, com nome, e-mail e mensagem.</td></tr>
+    <tr><td>RF05</td><td>O site deve possuir página inicial, página de cardápio e página de contato.</td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">4.2 Requisitos não funcionais</h3>
+<table>
+  <thead><tr><th style="width:60px;">ID</th><th>Descrição</th></tr></thead>
+  <tbody>
+    <tr><td>RNF01</td><td>O site deve funcionar corretamente em computadores e em dispositivos móveis.</td></tr>
+    <tr><td>RNF02</td><td>O site deve possuir uma interface simples e agradável ao usuário.</td></tr>
+  </tbody>
+</table>
+
+<p>
+Para atender ao requisito RF02, foi elaborado um cardápio de exemplo contendo itens de café,
+doces e salgados, cada um com nome, descrição, preço e imagem ilustrativa, conforme detalhado
+na Seção 6 deste documento.
+</p>
+
+<!-- 5 ANÁLISE E PROJETO -->
+<h2 class="sec">5. Análise e Projeto</h2>
+<h3 class="subsec">5.1 Arquitetura de navegação</h3>
+<p>
+A navegação do site foi projetada de forma linear e intuitiva, permitindo que o usuário se
+desloque entre as três páginas principais a partir de um menu fixo, presente em todas as telas:
+</p>
+<p style="text-align:center; font-weight:bold;">Usuário &rarr; Página Inicial &rarr; Cardápio &rarr; Contato</p>
+
+<h3 class="subsec">5.2 Tecnologias utilizadas</h3>
+<p>
+Optou-se pelo desenvolvimento exclusivamente em <strong>HTML5</strong>, <strong>CSS3</strong> e
+<strong>JavaScript</strong>, sem uso de frameworks ou de backend, tendo em vista o escopo
+reduzido do projeto e o prazo de duas aulas. O formulário de contato (RF04) foi implementado
+de forma a simular o envio da mensagem, exibindo uma confirmação visual ao usuário, sem
+persistência de dados em banco de dados.
+</p>
+
+<div class="page-break"></div>
+
+<!-- 6 DESENVOLVIMENTO -->
+<h2 class="sec">6. Desenvolvimento</h2>
+<p>
+Nesta etapa, os requisitos e o projeto definidos anteriormente foram implementados. O projeto
+foi organizado nos seguintes arquivos:
+</p>
+<table>
+  <thead><tr><th>Arquivo</th><th>Função</th></tr></thead>
+  <tbody>
+    <tr><td>index.html</td><td>Página inicial, com apresentação da cafeteria, seção "Sobre nós" e produtos em destaque.</td></tr>
+    <tr><td>cardapio.html</td><td>Página de cardápio, com filtro de produtos por categoria (Cafés, Doces, Salgados).</td></tr>
+    <tr><td>contato.html</td><td>Página de contato, com formulário e dados de localização da cafeteria.</td></tr>
+    <tr><td>css/style.css</td><td>Arquivo responsável pela identidade visual e pela responsividade do site.</td></tr>
+    <tr><td>js/script.js</td><td>Arquivo responsável pelo menu mobile, pelo filtro do cardápio e pela simulação do formulário de contato.</td></tr>
+  </tbody>
+</table>
+
+<p>Como exemplo de conteúdo do cardápio (RF02), foram cadastrados os seguintes itens:</p>
+<table>
+  <thead><tr><th>Produto</th><th>Categoria</th><th>Preço</th></tr></thead>
+  <tbody>
+    <tr><td>Cappuccino Cláudia-ssico</td><td>Cafés</td><td>R$ 12,90</td></tr>
+    <tr><td>Expresso Correção-Rápida</td><td>Cafés</td><td>R$ 7,90</td></tr>
+    <tr><td>Bolo Aula-Dez</td><td>Doces</td><td>R$ 14,90</td></tr>
+    <tr><td>Croissant Crocante da Cláudia</td><td>Salgados</td><td>R$ 11,90</td></tr>
+    <tr><td>Cheesecake Nota-Máxima</td><td>Doces</td><td>R$ 16,90</td></tr>
+    <tr><td>Cookie Sem-Recurso</td><td>Doces</td><td>R$ 9,90</td></tr>
+  </tbody>
+</table>
+
+<!-- 7 TESTES -->
+<h2 class="sec">7. Testes</h2>
+<p>
+A etapa de testes teve como objetivo verificar se cada requisito funcional e não funcional foi
+corretamente implementado. Os testes foram realizados manualmente, navegando pelo site em
+diferentes tamanhos de tela (computador, tablet e celular) e preenchendo o formulário de
+contato com dados válidos.
+</p>
+<table>
+  <thead><tr><th>ID</th><th>Requisito</th><th>Teste realizado</th><th>Resultado</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>T01</td><td>RF01</td><td>Verificar se as informações da cafeteria são exibidas.</td><td>Informações exibidas corretamente.</td><td>Aprovado</td></tr>
+    <tr><td>T02</td><td>RF02</td><td>Verificar se os produtos possuem nome, descrição, preço e imagem.</td><td>Todos os campos apresentados.</td><td>Aprovado</td></tr>
+    <tr><td>T03</td><td>RF03</td><td>Verificar endereço, telefone e horário.</td><td>Informações apresentadas.</td><td>Aprovado</td></tr>
+    <tr><td>T04</td><td>RF04</td><td>Preencher o formulário de contato.</td><td>Formulário aceita os dados e confirma o envio.</td><td>Aprovado</td></tr>
+    <tr><td>T05</td><td>RF05</td><td>Navegar entre as páginas do site.</td><td>Navegação funcionando corretamente.</td><td>Aprovado</td></tr>
+    <tr><td>T06</td><td>RNF01</td><td>Abrir o site em um dispositivo móvel.</td><td>Layout se adapta corretamente à tela.</td><td>Aprovado</td></tr>
+    <tr><td>T07</td><td>RNF02</td><td>Avaliar a interface do site.</td><td>Interface considerada simples e agradável.</td><td>Aprovado</td></tr>
+  </tbody>
+</table>
+
+<!-- 8 IMPLANTAÇÃO -->
+<h2 class="sec">8. Implantação</h2>
+<p>
+Concluídas as etapas de desenvolvimento e testes, o projeto encontra-se pronto para
+implantação. Por se tratar de um site estático, sem backend ou banco de dados, sua
+disponibilização pode ser feita por meio de qualquer serviço de hospedagem de arquivos
+estáticos, sendo suficiente copiar a pasta do projeto para o servidor de destino.
+</p>
+<ul class="formal">
+  <li>Desenvolvimento concluído;</li>
+  <li>Testes realizados e aprovados;</li>
+  <li>Site responsivo, validado em diferentes tamanhos de tela;</li>
+  <li>Requisitos funcionais e não funcionais atendidos.</li>
+</ul>
+<p><strong>Status do projeto: pronto para implantação.</strong></p>
+
+<!-- 9 CONSIDERAÇÕES FINAIS -->
+<h2 class="sec">9. Considerações Finais</h2>
+<p>
+O desenvolvimento deste projeto permitiu colocar em prática os conceitos do Modelo Cascata,
+evidenciando a importância de um planejamento bem definido mesmo em projetos de curta duração.
+A execução sequencial das etapas — requisitos, análise, desenvolvimento, testes e implantação —
+mostrou-se adequada ao prazo estabelecido, contribuindo para a organização do trabalho em
+equipe.
+</p>
+<p>
+Por fim, registra-se que o nome da cafeteria e alguns itens do cardápio apresentados na Seção 6
+foram escolhidos como uma homenagem bem-humorada à professora responsável pela disciplina,
+Cláudia, a quem a equipe agradece pela orientação ao longo do desenvolvimento deste trabalho.
+</p>
+
+<div class="sign-block">
+  <div class="sign-line"></div>
+  <p>[Nome do(a) aluno(a)]</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Documentação — Café da Claudinha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="doc-layout">
+
+  <aside class="doc-sidebar">
+    <a href="../index.html" class="brand">
+      <span class="brand-mark">☕</span>
+      Café da Claudinha
+    </a>
+    <nav class="doc-nav">
+      <button data-target="doc-documentacao" class="active">📄 Documentação</button>
+      <button data-target="doc-casos-uso">🧩 Casos de Uso</button>
+      <button data-target="doc-requisitos">📋 Modelagem de Requisitos</button>
+      <button data-target="doc-mer">🗂️ MER</button>
+    </nav>
+  </aside>
+
+  <main class="doc-main">
+
+    <!-- ===================== DOCUMENTAÇÃO ===================== -->
+    <section id="doc-documentacao" class="doc-panel active">
+      <h2>Documentação do Projeto</h2>
+      <p class="section-lead">Registro técnico do desenvolvimento do site institucional, conduzido conforme o Modelo Cascata. Esta página é de uso interno da equipe — não faz parte da navegação pública do site.</p>
+
+      <div class="status-grid">
+        <div class="status-card">
+          <span>Metodologia</span>
+          <strong>Modelo Cascata</strong>
+        </div>
+        <div class="status-card">
+          <span>Páginas públicas</span>
+          <strong>3</strong>
+        </div>
+        <div class="status-card">
+          <span>Requisitos atendidos</span>
+          <strong>8 de 8</strong>
+        </div>
+        <div class="status-card">
+          <span>Status</span>
+          <strong>Pronto p/ implantação</strong>
+        </div>
+      </div>
+
+      <h3 class="subsec" style="margin-top:2.6rem;">Etapas do Modelo Cascata</h3>
+      <div class="cascade-flow">
+        <div class="cascade-step">
+          <h4>1. Requisitos</h4>
+          <p>Levantamento das necessidades da cafeteria e definição do que o sistema deveria apresentar.</p>
+        </div>
+        <div class="cascade-connector">↓</div>
+        <div class="cascade-step">
+          <h4>2. Análise e Projeto</h4>
+          <p>Definição da navegação, da identidade visual e das tecnologias empregadas.</p>
+        </div>
+        <div class="cascade-connector">↓</div>
+        <div class="cascade-step">
+          <h4>3. Desenvolvimento</h4>
+          <p>Implementação das páginas e das funcionalidades previstas nos requisitos.</p>
+        </div>
+        <div class="cascade-connector">↓</div>
+        <div class="cascade-step">
+          <h4>4. Testes</h4>
+          <p>Verificação do funcionamento do sistema e de sua responsividade em diferentes dispositivos.</p>
+        </div>
+        <div class="cascade-connector">↓</div>
+        <div class="cascade-step">
+          <h4>5. Implantação</h4>
+          <p>Disponibilização do site para utilização.</p>
+        </div>
+      </div>
+
+      <h3 class="subsec" style="margin-top:2.6rem;">Tecnologias utilizadas</h3>
+      <div class="tech-row">
+        <span class="tech-pill">HTML5</span>
+        <span class="tech-pill">CSS3</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">Google Fonts</span>
+      </div>
+
+      <h3 class="subsec" style="margin-top:2.6rem;">Checklist de entrega</h3>
+      <div class="checklist">
+        <div class="checklist-item">✓ Desenvolvimento concluído</div>
+        <div class="checklist-item">✓ Testes realizados e aprovados</div>
+        <div class="checklist-item">✓ Site responsivo, validado em diferentes tamanhos de tela</div>
+        <div class="checklist-item">✓ Requisitos funcionais e não funcionais atendidos</div>
+      </div>
+
+      <div class="deploy-status">
+        <span>Status do projeto</span>
+        <strong>Pronto para implantação</strong>
+      </div>
+
+      <p style="margin-top:2.2rem; font-size:0.88rem; color:var(--text-muted);">
+        O documento completo em texto corrido, com capa, sumário e considerações finais, está
+        disponível em <code>documentacao-formal.html</code> / <code>documentacao-projeto.pdf</code>,
+        nesta mesma pasta.
+      </p>
+    </section>
+
+    <!-- ===================== CASOS DE USO ===================== -->
+    <section id="doc-casos-uso" class="doc-panel">
+      <h2>Casos de Uso</h2>
+      <p class="section-lead">Interações previstas entre o usuário e o site, levantadas na etapa de Requisitos do Modelo Cascata.</p>
+
+      <h3 class="subsec">Ator</h3>
+      <p>O sistema possui um único ator: o <strong>Visitante</strong>, qualquer pessoa que acesse o site pelo navegador, sem necessidade de login ou cadastro.</p>
+
+      <h3 class="subsec" style="margin-top:2rem;">Diagrama de casos de uso</h3>
+      <div style="background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-soft); padding:1.6rem; overflow-x:auto;">
+        <svg viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:700px; height:auto; display:block; margin:0 auto;">
+          <!-- Fronteira do sistema -->
+          <rect x="195" y="18" width="490" height="412" rx="14" fill="none" stroke="var(--coffee-light)" stroke-width="2" stroke-dasharray="6 5"/>
+          <text x="440" y="42" text-anchor="middle" font-family="Karla, sans-serif" font-size="13" font-weight="700" fill="var(--coffee)">Site Café da Claudinha</text>
+
+          <!-- Ator -->
+          <g stroke="var(--coffee-dark)" stroke-width="2.5" fill="none" stroke-linecap="round">
+            <circle cx="70" cy="200" r="14" fill="var(--cream)"/>
+            <line x1="70" y1="214" x2="70" y2="255"/>
+            <line x1="45" y1="230" x2="95" y2="230"/>
+            <line x1="70" y1="255" x2="50" y2="290"/>
+            <line x1="70" y1="255" x2="90" y2="290"/>
+          </g>
+          <text x="70" y="312" text-anchor="middle" font-family="Karla, sans-serif" font-size="13" font-weight="700" fill="var(--coffee-dark)">Visitante</text>
+
+          <!-- Linhas de associação -->
+          <g stroke="var(--coffee-light)" stroke-width="1.4">
+            <line x1="96" y1="222" x2="305" y2="95"/>
+            <line x1="96" y1="226" x2="305" y2="155"/>
+            <line x1="97" y1="230" x2="305" y2="215"/>
+            <line x1="97" y1="234" x2="305" y2="275"/>
+            <line x1="96" y1="238" x2="305" y2="335"/>
+            <line x1="96" y1="242" x2="305" y2="395"/>
+          </g>
+
+          <!-- Casos de uso -->
+          <ellipse cx="460" cy="95" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="100" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC01 · Visualizar página inicial</text>
+
+          <ellipse cx="460" cy="155" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="160" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC02 · Consultar cardápio</text>
+
+          <ellipse cx="460" cy="215" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="220" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC03 · Filtrar cardápio por categoria</text>
+
+          <ellipse cx="460" cy="275" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="280" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC04 · Consultar dados de contato</text>
+
+          <ellipse cx="460" cy="335" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="340" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC05 · Enviar mensagem de contato</text>
+
+          <ellipse cx="460" cy="395" rx="155" ry="25" fill="var(--white)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="460" y="400" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" fill="var(--coffee-dark)">UC06 · Navegar entre páginas</text>
+        </svg>
+      </div>
+
+      <h3 class="subsec" style="margin-top:2.4rem;">Especificação dos casos de uso</h3>
+      <table class="req-table">
+        <thead>
+          <tr><th style="width:60px;">ID</th><th>Caso de uso</th><th>Descrição</th><th>Pré-condição</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>UC01</td>
+            <td>Visualizar página inicial</td>
+            <td>O visitante acessa o site e visualiza a apresentação da cafeteria, os diferenciais e os produtos em destaque.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>UC02</td>
+            <td>Consultar cardápio</td>
+            <td>O visitante acessa a página de cardápio e visualiza os produtos disponíveis, com nome, descrição, preço e imagem.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>UC03</td>
+            <td>Filtrar cardápio por categoria</td>
+            <td>O visitante seleciona uma categoria (Cafés, Doces ou Salgados) e o sistema exibe apenas os produtos correspondentes.</td>
+            <td>Estar na página de cardápio.</td>
+          </tr>
+          <tr>
+            <td>UC04</td>
+            <td>Consultar dados de contato</td>
+            <td>O visitante acessa a página de contato e visualiza endereço, telefone e horário de funcionamento.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>UC05</td>
+            <td>Enviar mensagem de contato</td>
+            <td>O visitante preenche o formulário com nome, e-mail e mensagem, e o sistema confirma o envio.</td>
+            <td>Preencher todos os campos obrigatórios do formulário.</td>
+          </tr>
+          <tr>
+            <td>UC06</td>
+            <td>Navegar entre páginas</td>
+            <td>O visitante utiliza o menu de navegação para se deslocar entre início, cardápio e contato.</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===================== MODELAGEM DE REQUISITOS ===================== -->
+    <section id="doc-requisitos" class="doc-panel">
+      <h2>Modelagem de Requisitos</h2>
+      <p class="section-lead">Requisitos funcionais e não funcionais levantados na etapa de Requisitos, com rastreabilidade para os casos de uso correspondentes.</p>
+
+      <h3 class="subsec">Requisitos funcionais</h3>
+      <table class="req-table">
+        <thead>
+          <tr><th style="width:70px;">ID</th><th>Descrição</th><th style="width:110px;">Caso de uso</th><th style="width:120px;">Situação</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-func">RF01</span></td>
+            <td>O site deve apresentar informações sobre a cafeteria.</td>
+            <td>UC01</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-func">RF02</span></td>
+            <td>O site deve apresentar o cardápio, contendo nome do produto, descrição, preço e imagem.</td>
+            <td>UC02</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-func">RF03</span></td>
+            <td>O site deve apresentar endereço, telefone e horário de funcionamento.</td>
+            <td>UC04</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-func">RF04</span></td>
+            <td>O usuário deve poder preencher um formulário de contato, com nome, e-mail e mensagem.</td>
+            <td>UC05</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-func">RF05</span></td>
+            <td>O site deve possuir página inicial, página de cardápio e página de contato.</td>
+            <td>UC06</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-func">RF06</span></td>
+            <td>O usuário deve poder filtrar os produtos do cardápio por categoria.</td>
+            <td>UC03</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="subsec" style="margin-top:2.2rem;">Requisitos não funcionais</h3>
+      <table class="req-table">
+        <thead>
+          <tr><th style="width:70px;">ID</th><th>Descrição</th><th style="width:120px;">Situação</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-nfunc">RNF01</span></td>
+            <td>O site deve funcionar corretamente em computadores e em dispositivos móveis (responsivo).</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-nfunc">RNF02</span></td>
+            <td>O site deve possuir uma interface simples e agradável ao usuário.</td>
+            <td><span class="badge badge-ok">Atendido</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:1.8rem; font-size:0.88rem; color:var(--text-muted);">
+        Observação: o RF06 foi formalizado nesta modelagem para cobrir de forma explícita o
+        filtro de categorias do cardápio (já implementado em <code>js/script.js</code>), que na
+        documentação formal original estava descrito apenas dentro do escopo do RF02.
+      </p>
+    </section>
+
+    <!-- ===================== MER ===================== -->
+    <section id="doc-mer" class="doc-panel">
+      <h2>Modelo Entidade-Relacionamento (MER)</h2>
+      <p class="section-lead">Modelagem conceitual dos dados que o sistema manipula, com base no cardápio (RF02/RF06) e no formulário de contato (RF04).</p>
+
+      <p style="font-size:0.9rem; color:var(--text-muted);">
+        O protótipo atual é totalmente estático (HTML, CSS e JavaScript), sem back-end nem banco
+        de dados, conforme registrado nos Requisitos Não Funcionais e na seção de Implantação.
+        O MER a seguir representa o modelo de dados que sustentaria uma futura evolução do
+        projeto com persistência real das informações.
+      </p>
+
+      <h3 class="subsec" style="margin-top:1.6rem;">Diagrama entidade-relacionamento</h3>
+      <div style="background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-soft); padding:1.6rem; overflow-x:auto;">
+        <svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:740px; height:auto; display:block; margin:0 auto;">
+
+          <!-- ===== Entidade CATEGORIA ===== -->
+          <rect x="30" y="90" width="170" height="72" fill="var(--white)" stroke="var(--coffee-light)" stroke-width="2"/>
+          <rect x="30" y="90" width="170" height="28" fill="var(--coffee-dark)"/>
+          <text x="115" y="109" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" font-weight="700" fill="var(--white)">CATEGORIA</text>
+          <text x="40" y="134" font-family="Karla, sans-serif" font-size="11"><tspan font-weight="700" fill="var(--caramel)">PK </tspan><tspan fill="var(--coffee-dark)">id_categoria</tspan></text>
+          <text x="40" y="156" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">nome</text>
+
+          <!-- ===== Relacionamento (losango) ===== -->
+          <polygon points="275,115 330,85 385,115 330,145" fill="var(--gold)" stroke="var(--caramel)" stroke-width="2"/>
+          <text x="330" y="119" text-anchor="middle" font-family="Karla, sans-serif" font-size="11" font-weight="700" fill="var(--coffee-dark)">possui</text>
+
+          <line x1="200" y1="126" x2="275" y2="115" stroke="var(--coffee-light)" stroke-width="1.6"/>
+          <text x="230" y="112" font-family="Karla, sans-serif" font-size="11" font-weight="700" fill="var(--coffee)">1</text>
+
+          <line x1="385" y1="115" x2="480" y2="100" stroke="var(--coffee-light)" stroke-width="1.6"/>
+          <text x="440" y="98" font-family="Karla, sans-serif" font-size="11" font-weight="700" fill="var(--coffee)">N</text>
+
+          <!-- ===== Entidade PRODUTO ===== -->
+          <rect x="480" y="20" width="210" height="160" fill="var(--white)" stroke="var(--coffee-light)" stroke-width="2"/>
+          <rect x="480" y="20" width="210" height="28" fill="var(--coffee-dark)"/>
+          <text x="585" y="39" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" font-weight="700" fill="var(--white)">PRODUTO</text>
+          <text x="490" y="64" font-family="Karla, sans-serif" font-size="11"><tspan font-weight="700" fill="var(--caramel)">PK </tspan><tspan fill="var(--coffee-dark)">id_produto</tspan></text>
+          <text x="490" y="86" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">nome</text>
+          <text x="490" y="108" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">descricao</text>
+          <text x="490" y="130" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">preco</text>
+          <text x="490" y="152" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">imagem_url</text>
+          <text x="490" y="174" font-family="Karla, sans-serif" font-size="11"><tspan font-weight="700" fill="var(--caramel)">FK </tspan><tspan fill="var(--coffee-dark)">id_categoria</tspan></text>
+
+          <!-- ===== Entidade MENSAGEM_CONTATO ===== -->
+          <rect x="250" y="230" width="220" height="138" fill="var(--white)" stroke="var(--coffee-light)" stroke-width="2"/>
+          <rect x="250" y="230" width="220" height="28" fill="var(--coffee-dark)"/>
+          <text x="360" y="249" text-anchor="middle" font-family="Karla, sans-serif" font-size="12.5" font-weight="700" fill="var(--white)">MENSAGEM_CONTATO</text>
+          <text x="260" y="274" font-family="Karla, sans-serif" font-size="11"><tspan font-weight="700" fill="var(--caramel)">PK </tspan><tspan fill="var(--coffee-dark)">id_mensagem</tspan></text>
+          <text x="260" y="296" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">nome</text>
+          <text x="260" y="318" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">email</text>
+          <text x="260" y="340" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">mensagem</text>
+          <text x="260" y="362" font-family="Karla, sans-serif" font-size="11" fill="var(--coffee-dark)">data_envio</text>
+        </svg>
+        <p style="text-align:center; font-size:0.82rem; color:var(--text-muted); margin-top:0.6rem;">
+          MENSAGEM_CONTATO é uma entidade independente — registra os envios do formulário de
+          contato (RF04) e não se relaciona com as demais entidades neste modelo.
+        </p>
+      </div>
+
+      <h3 class="subsec" style="margin-top:2.2rem;">Descrição do relacionamento</h3>
+      <p>Uma <strong>CATEGORIA</strong> (Cafés, Doces ou Salgados) pode agrupar vários <strong>PRODUTOs</strong>, e cada <strong>PRODUTO</strong> pertence a exatamente uma <strong>CATEGORIA</strong> — relacionamento de cardinalidade <strong>1:N</strong>, que sustenta o filtro por categoria do cardápio (RF06).</p>
+
+      <h3 class="subsec" style="margin-top:2rem;">Dicionário de dados</h3>
+      <table class="req-table">
+        <thead>
+          <tr><th>Entidade</th><th>Atributo</th><th>Tipo</th><th style="width:120px;">Restrição</th><th>Descrição</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CATEGORIA</td><td>id_categoria</td><td>INT</td><td>PK</td><td>Identificador único da categoria.</td></tr>
+          <tr><td>CATEGORIA</td><td>nome</td><td>VARCHAR(50)</td><td>NOT NULL</td><td>Nome da categoria (Cafés, Doces, Salgados).</td></tr>
+          <tr><td>PRODUTO</td><td>id_produto</td><td>INT</td><td>PK</td><td>Identificador único do produto.</td></tr>
+          <tr><td>PRODUTO</td><td>nome</td><td>VARCHAR(100)</td><td>NOT NULL</td><td>Nome do produto exibido no cardápio.</td></tr>
+          <tr><td>PRODUTO</td><td>descricao</td><td>VARCHAR(255)</td><td>—</td><td>Descrição curta do produto.</td></tr>
+          <tr><td>PRODUTO</td><td>preco</td><td>DECIMAL(10,2)</td><td>NOT NULL</td><td>Preço do produto.</td></tr>
+          <tr><td>PRODUTO</td><td>imagem_url</td><td>VARCHAR(255)</td><td>—</td><td>Caminho/URL da imagem do produto.</td></tr>
+          <tr><td>PRODUTO</td><td>id_categoria</td><td>INT</td><td>FK → CATEGORIA</td><td>Categoria à qual o produto pertence.</td></tr>
+          <tr><td>MENSAGEM_CONTATO</td><td>id_mensagem</td><td>INT</td><td>PK</td><td>Identificador único da mensagem.</td></tr>
+          <tr><td>MENSAGEM_CONTATO</td><td>nome</td><td>VARCHAR(100)</td><td>NOT NULL</td><td>Nome informado no formulário de contato (RF04).</td></tr>
+          <tr><td>MENSAGEM_CONTATO</td><td>email</td><td>VARCHAR(100)</td><td>NOT NULL</td><td>E-mail informado no formulário de contato.</td></tr>
+          <tr><td>MENSAGEM_CONTATO</td><td>mensagem</td><td>TEXT</td><td>NOT NULL</td><td>Conteúdo da mensagem enviada.</td></tr>
+          <tr><td>MENSAGEM_CONTATO</td><td>data_envio</td><td>DATETIME</td><td>NOT NULL</td><td>Data e hora do envio da mensagem.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

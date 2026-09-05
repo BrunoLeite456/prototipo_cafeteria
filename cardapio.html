@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café da Claudinha — Cardápio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">☕</span>
+      Café da Claudinha
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html" class="active">Cardápio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <p class="section-tag">Cardápio</p>
+    <h1 class="section-title">Nosso Cardápio</h1>
+    <p class="section-lead">Sabores preparados especialmente para você.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 2.5rem;">
+  <div class="container">
+
+    <div class="category-tabs">
+      <button class="category-tab active" data-category="todos">Todos</button>
+      <button class="category-tab" data-category="cafes">Cafés</button>
+      <button class="category-tab" data-category="doces">Doces</button>
+      <button class="category-tab" data-category="salgados">Salgados</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <article class="product-card" data-category="cafes">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="Cappuccino cremoso">
+        </div>
+        <div class="product-body">
+          <h3>Cappuccino Cláudia-ssico</h3>
+          <p>Espresso, leite vaporizado e espuma cremosa. Aprovado com nota máxima.</p>
+          <div class="product-footer">
+            <span class="price">R$ 12,90</span>
+            <span class="tag">Cafés</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="cafes">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=80" alt="Café expresso">
+        </div>
+        <div class="product-body">
+          <h3>Expresso Correção-Rápida</h3>
+          <p>Café encorpado, feito para quem corrige trabalhos na velocidade da luz.</p>
+          <div class="product-footer">
+            <span class="price">R$ 7,90</span>
+            <span class="tag">Cafés</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="doces">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Bolo de chocolate">
+        </div>
+        <div class="product-body">
+          <h3>Bolo Aula-Dez</h3>
+          <p>Fatia de bolo de chocolate com cobertura cremosa. Nota 10 garantida.</p>
+          <div class="product-footer">
+            <span class="price">R$ 14,90</span>
+            <span class="tag">Doces</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="salgados">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Croissant artesanal">
+        </div>
+        <div class="product-body">
+          <h3>Croissant Crocante da Cláudia</h3>
+          <p>Croissant artesanal, crocante por fora e macio por dentro.</p>
+          <div class="product-footer">
+            <span class="price">R$ 11,90</span>
+            <span class="tag">Salgados</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="doces">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=500&q=80" alt="Cheesecake de morango">
+        </div>
+        <div class="product-body">
+          <h3>Cheesecake Nota-Máxima</h3>
+          <p>Cheesecake cremoso com cobertura de morango. Aprovado sem ressalvas.</p>
+          <div class="product-footer">
+            <span class="price">R$ 16,90</span>
+            <span class="tag">Doces</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="doces">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500&q=80" alt="Cookie artesanal">
+        </div>
+        <div class="product-body">
+          <h3>Cookie Sem-Recurso</h3>
+          <p>Cookie tão bom que dispensa segunda chamada.</p>
+          <div class="product-footer">
+            <span class="price">R$ 9,90</span>
+            <span class="tag">Doces</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">Café da Claudinha</p>
+      <p>Rua Cláudia, nº 10 — Bairro Aprovado, Centro</p>
+      <p>(47) 99910-0010</p>
+    </div>
+    <div>
+      <h4>Horário</h4>
+      <p>Seg a sex: 08:00 às 19:00</p>
+      <p>Sábado: 09:00 às 18:00</p>
+      <p>Domingo: Fechado</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">Café da Claudinha · Projeto acadêmico de Análise e Desenvolvimento de Sistemas · <a href="documentacao/documentacao.html" class="footer-doc-link">Documentação</a></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
